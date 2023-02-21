@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+<h1 class="animate__animated animate__bounce">An animated element</h1>
+
+<div class="input-group"  [ngClass]="isSearchActive ? 'open' : ''" >
+  <input type="text" class="myInput ">
+  <i class="uil uil-times"></i>
+  <i class="uil uil-search"></i>
+</div>
+
+  <i class="uil uil-search" (click)="isSearchActive = !isSearchActive"></i>
+
+
+<input type="search" id="text">
+
+
+
+<div class="input-box" [ngClass]="isSearchActive ? 'open': ' '">
+  <input type="text" placeholder="Search...">
+  <span class="icon" (click)="isSearchActive = !isSearchActive">
+    <i class="uil uil-search search-icon"></i>
+  </span>
+  <i class="uil uil-times close-icon"></i>
+</div>
